@@ -7,14 +7,14 @@ for (int i = 0; i < array.Length; ++i) {
     array[i] = new Random().Next(minValue, maxValue +1);
 }
 
-Console.WriteLine(string.Join(",", array));
+//Console.WriteLine(string.Join(",", array));
 
 int negativNumSum = 0;
 int positivNumSum = 0;
 
 foreach (int el in array) {
 negativNumSum += el < 0 ? el : 0;
-positivNumSum += el < 0 ? el : 0;
+positivNumSum += el > 0 ? el : 0;
 }
 
 Console.WriteLine("Positiv sum: " + positivNumSum);

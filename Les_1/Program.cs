@@ -3,8 +3,8 @@ arr[0] = 1;
 arr[1] = 2;
 arr[2] = 3;
 
-//string concat = string.Join(",", arr);
-//Console.WriteLine(concat);
+string joinedArray = MyJoin(",", arr);
+Console.WriteLine(joinedArray);
 
 string MyJoin(string delimeter, int[] array) {
     string result = "";
@@ -15,4 +15,4 @@ string MyJoin(string delimeter, int[] array) {
 
     return result;
 }
-Console.WriteLine(MyJoin);
+//Console.WriteLine(MyJoin);
