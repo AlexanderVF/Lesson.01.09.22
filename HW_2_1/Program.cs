@@ -1,4 +1,4 @@
-﻿//Найти сумму нечетных чисел в массиве
+﻿//Найти сумму элементов на нечетных позициях в массиве
 Console.Clear();
 int size = 4;
 int minValue = 10;
@@ -15,8 +15,8 @@ Console.WriteLine(string.Join(",", array));
     for (int i = 0; i < array.Length; i++)
     {
     
-        sum += array[i] % 2 > 0 ? array[i] : 0;
+        sum += i % 2 > 0 ? array[i] : 0;
     }
 
 
-Console.WriteLine("В этом массиве [" + (string.Join(",", array) + "] сумма нечетных чисел -> " + sum));
+Console.WriteLine("В этом массиве [" + (string.Join(",", array) + "] сумма элементов на нечетных позициях -> " + sum));
